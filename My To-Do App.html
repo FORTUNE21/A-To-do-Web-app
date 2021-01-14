@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta name="theme-color" content="rgb(109,43,12)"> 
+    <link rel="stylesheet" href="To-Do CSS/to-do.css" type='text/css'/>
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+    <title>My To-Do App </title> 
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h3>A simple To-Do Web app 😉</h3> 
+            </div>
+            <div id="container-item" class="container-item">
+                    <form id="form" action="javascript:void(0)" method="POST">
+                            <h5>My to-do 😊</h5>
+                            <div class="input-field col s6">
+                                <input id="to_do_item" class="validate" type="text" placeholder="what's your to-do today?">
+                            </div>
+                            <div class="input-field col s6">
+                                    <input id="button_save" class="waves-effect waves-light btn-large custom" type="submit" value="Save">
+                                    
+                                    <input id="button_clear" class="waves-effect waves-light btn-large custom" type="button" value="Clear All">
+                                </div>      
+                        </form>
+                        </div>
+                        <div id="container-item-list" class="container-item-list">
+                            <p>
+                                <span class="span" style="display:inline-block">
+                                    <input id="0" class="filled-in checkbox-orange" type="checkbox" onclick="clickEffect(0)">
+                                    <label id="0element" for="0" style="text-decoration: line-through;">
+                                            ::before
+                                            go shopping
+
+                                            ::after
+                                            </label>
+                                            </span>
+                                            <span class="delete" style="display:inline-block">
+                                                <button class="waves-effect waves-light btn" onclick="deleteItem(0)">Delete
+                                                </button>
+                                                </span>
+                                                </p>
+                                                <p>
+                                            <span class="span" style="display:inline-block">
+                                                <input id="1" class="filled-in checkbox-orange" type="checkbox" onclick="clickEffect(1)">
+                                                <label id="1element" for="1" style="text-decoration: none;">
+                                                        ::before
+                                                        go to the libary
+                                                        ::after
+                                                        </label>
+                                                        </span>
+                                                        <span class="delete" style="display:inline-block">
+                                                            <button class="waves-effect waves-light btn" onclick="deleteItem(1)">Delete
+                                                                </button>
+                                                                </span>
+                                                                </p>
+                                                                </div>
+                        </div>
+                        </main>                  
+                                            <footer>
+                                                <p> &copy  MaryAwe To-Do WebApp</p>
+                                                </footer>
+                                                <script src="js/index.js"></script>
+    
+</body>
+</html>
